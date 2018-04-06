@@ -11,19 +11,16 @@ namespace FinancialPlannerMVC.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Household()
         {
-            AspNetUsers = new HashSet<AspNetUser>();
             Budgets = new HashSet<Budget>();
             Invites = new HashSet<Invite>();
             PersonalAccounts = new HashSet<PersonalAccount>();
             Categories = new HashSet<Category>();
+            Users = new HashSet<ApplicationUser>();
         }
 
         public int Id { get; set; }
 
         public string Name { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<AspNetUser> AspNetUsers { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Budget> Budgets { get; set; }
@@ -36,5 +33,8 @@ namespace FinancialPlannerMVC.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Category> Categories { get; set; }
+
+        public virtual ICollection<ApplicationUser> Users { get; set; }
+
     }
 }
