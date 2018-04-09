@@ -25,10 +25,6 @@ namespace FinancialPlannerMVC.Models
         [StringLength(128)]
         public string EnteredById { get; set; }
 
-        public bool Reconciled { get; set; }
-
-        public decimal ReconciledAmount { get; set; }
-
         public bool Void { get; set; }
 
         public bool IsDeleted { get; set; }

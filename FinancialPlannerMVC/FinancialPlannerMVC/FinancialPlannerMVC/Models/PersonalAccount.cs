@@ -22,8 +22,6 @@ namespace FinancialPlannerMVC.Models
 
         public decimal Balance { get; set; }
 
-        public decimal ReconciledBalance { get; set; }
-
         [StringLength(128)]
         public string CreatedById { get; set; }
 
