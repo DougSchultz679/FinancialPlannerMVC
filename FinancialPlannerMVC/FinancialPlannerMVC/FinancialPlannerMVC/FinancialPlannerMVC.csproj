@@ -190,8 +190,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BudgetsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\vmControllers\BudgetViewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -200,14 +202,16 @@
       <DependentUpon>201804051540472_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Helpers\DateExtensions.cs" />
+    <Compile Include="Models\ViewModels\AccountViewModels.cs" />
     <Compile Include="Models\Budget.cs" />
     <Compile Include="Models\BudgetItem.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Household.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Invite.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ViewModels\BudgetVM.cs" />
+    <Compile Include="Models\ViewModels\ManageViewModels.cs" />
     <Compile Include="Models\PersonalAccount.cs" />
     <Compile Include="Models\Transaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -273,6 +277,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Assets\" />
+    <Folder Include="Views\Budgets\" />
+    <Folder Include="Views\BudgetView\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

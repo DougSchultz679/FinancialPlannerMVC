@@ -27,6 +27,8 @@ namespace FinancialPlannerMVC.Models
 
         public bool IsDeleted { get; set; }
 
+        public bool HouseholdShared { get; set; }
+
         public virtual ApplicationUser User { get; set; }
 
         public virtual Household Household { get; set; }
